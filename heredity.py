@@ -164,7 +164,7 @@ def joint_probability(people, one_gene, two_genes, have_trait):
                     # or from the father but not the mother  
                     probability += (1 - mother_probability) * father_probability 
                 case _:
-                    # neither from the mother not the father
+                    # neither from the mother nor the father
                     probability += (1 - mother_probability) * (1 - father_probability)
 
         # trait probability
